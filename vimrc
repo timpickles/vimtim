@@ -1,4 +1,4 @@
-set runtimepath=~/.timvim,~/.timvim/after,$VIMRUNTIME
+set runtimepath=~/.vimtim,~/.vimtim/after,$VIMRUNTIME
 
 set background=light
 syntax on

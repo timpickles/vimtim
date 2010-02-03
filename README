@@ -1,4 +1,4 @@
 For vimtim to work this project will need to exist in the folder ~/.vimtim
 To use vimtim just add the enviroment variable:
 
-export VIMINIT="set runtimepath=~/.vimtim,~/.vimtim/after, | source ~/.vimtim/vimrc"
+export VIMINIT="set runtimepath=~/.vimtim,~/.vimtim/after,$VIMRUNTIME | source ~/.vimtim/vimrc"
