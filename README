@@ -1,4 +1,11 @@
-For vimtim to work this project will need to exist in the folder ~/.vimtim
-To use vimtim just add the enviroment variable:
+Install
+-------
+To install vimtim run the following command in your home folder.
 
-export VIMINIT="source ~/.vimtim/vimrc"
+  git clone git://github.com/timpickles/vimtim.git .vimtim
+
+Either add the following to your .bashrc file to always use vimtim or just type
+it into the terminal to change just the current bash session
+
+  export VIMINIT="source ~/.vimtim/vimrc"
+
