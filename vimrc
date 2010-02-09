@@ -8,7 +8,6 @@ set smarttab
 
 set number
 
-map <F2> :NERDTreeToggle<CR>
 map <C-t> :tabnew<CR>
 
 filetype plugin on
@@ -24,3 +23,6 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 inoremap <Nul> <C-x><C-o>
 
+"Nerdtree
+map <F2> :NERDTreeToggle<CR>
+let NERDTreeIgnore = ['\.pyc$','\.swp$'] "ignore compiled python files
