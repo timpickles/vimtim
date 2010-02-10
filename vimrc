@@ -14,6 +14,7 @@ filetype plugin on
 
 autocmd FileType python set ft=python.django " For SnipMate
 autocmd FileType html set ft=html.django_template " For SnipMate
+autocmd FileType sass set expandtab
 
 " Onmicomplete settings
 autocmd FileType python set omnifunc=pythoncomplete#Complete
