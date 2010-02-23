@@ -16,9 +16,21 @@ set ignorecase
 
 set number
 
+" Tabs keybindings
 map <C-t> :tabnew<CR>
 map <C-left> :tabp<CR>
 map <C-right> :tabn<CR>
+imap <C-t> <Esc>:tabnew<CR>
+imap <C-left> <Esc>:tabp<CR>
+imap <C-right> <Esc>:tabn<CR>
+
+" The == re-indents the line to suit its new position
+nnoremap <M-up> mz:m-2<CR>`z==
+nnoremap <M-down> mz:m+<CR>`z==
+inoremap <M-up> <Esc>:m-2<CR>==gi
+inoremap <M-down> <Esc>:m+<CR>==gi
+vnoremap <M-up> :m'<-2<CR>gv=`>my`<mzgv`yo`z
+vnoremap <M-down> :m'>+<CR>gv=`<my`>mzgv`yo`z
 
 filetype plugin on
 
