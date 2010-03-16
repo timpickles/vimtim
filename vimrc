@@ -52,3 +52,6 @@ inoremap <Nul> <C-x><C-o>
 "Nerdtree
 map <F2> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$','\.swp$'] "ignore compiled python files
+
+autocmd BufRead *.py nmap <F9> :!python %<CR>
+autocmd BufRead *.py nmap <F8> :!<CR>
