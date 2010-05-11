@@ -29,6 +29,14 @@ snippet def
 	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
 		"""${3:docstring for $1}"""
 		${4:pass}
+# Main Function
+snippet main
+	def main():
+	        ${1:pass}
+
+	if __name__ == "__main__":
+		main();
+
 snippet deff
 	def ${1:fname}(${2:`indent('.') ? 'self' : ''`}):
 		${3}
@@ -81,6 +89,12 @@ snippet try Try/Except/Else/Finally
 snippet ifmain
 	if __name__ == '__main__':
 		${1:main()}
+
+# set break point
+snippet pdb
+	import pdb
+	pdb.set_trace()
+
 # __magic__
 snippet _
 	__${1:init}__${2}
